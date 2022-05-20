@@ -1,45 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Demo</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <style type="text/css">
+    <meta charset="utf-8"/>
+    <title>移动端入口</title>
+    <style type="text/css">
         html {
-            background: white;
+            background: white;  height:100%;
         }
         body {
-            margin: 0; overflow: hidden;
+            margin: 0; overflow: hidden; height:100%;
         }
 		#container{
 			height:100%;
 		    background: url(img/首页-背景.png) no-repeat;
 			background-size: cover;
 		}
-    @media screen and (orientation:portrait) {
-      /*竖屏样式*/
-      body {
-        transform-origin: 0 0;
-        transform: rotateZ(90deg) translateY(-100%);
-      }
-    }
- 
-  </style>
-<script>
-  function myFunction()
-  {
-      alert("你好，请横屏观看！");
-  }
-</script>
+
+    </style>
 </head>
 
-<body  id="body" onload="myFunction()">
-<div id="container">
-    <div style="position: absolute; top:110px; left:250px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
-    <div style="position: absolute; top:700px; left:600px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
-	<div style="position: absolute; top:420px; left:1360px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
-    <div style="position: absolute;top:0; left:0;font-size: 40px;">拖动浏览器窗口大小，查看缩放效果</div>
-	<div style="display:flex;justify-content:center;height:100%;"><img src="img/首页-标题.png" style="align-self:center;align-items: center;"></div>
+<body>
+<div id="body">
+		<div id="container" class="main width=100%" >
+		    <div style="position: absolute; top:110px; left:250px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
+		    <div style="position: absolute; top:700px; left:600px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
+			<div style="position: absolute; top:420px; left:1360px;width:70%;"><a href="#"><img src="img/首页-生僻字长廊按钮.png"></a></div>
+		    <div style="position: absolute;top:0; left:0;font-size: 40px;">拖动浏览器窗口大小，查看缩放效果</div>
+			<div style="display:flex;justify-content:center;height:100%;"><img src="img/首页-标题.png" style="align-self:center;align-items: center;"></div>
+		</div>
+
 </div>
 
 <script type="text/javascript">
@@ -52,7 +41,7 @@
   // 对body进行缩放
   function windowResize() {
     // 窗口宽高
-    let w = document.documentElement.clientWidth, h = document.documentElement.clientHeight   //移动端显示区的宽度与高度
+    let h = window.innerWidth, w = window.innerHeight   //文档显示区的宽度与高度
     // 缩放比例
     let r = w / cw < h / ch ? w / cw : h / ch
 
@@ -69,5 +58,19 @@
   window.addEventListener('resize', windowResize);
 </script>
 
+<script type="text/javascript" language="javascript">
+    function iFrameHeight() {
+        var ifm= document.getElementById("mainiframe");
+        var subWeb = document.frames ? document.frames["mainiframe"].document : ifm.contentDocument;
+        if(ifm != null && subWeb != null) {
+            ifm.height = subWeb.body.scrollHeight;
+        }
+    }
+    window.onresize=function(){
+        iFrameHeight();
+    }
+
+</script>
 </body>
 </html>
+
