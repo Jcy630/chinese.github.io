@@ -15,7 +15,13 @@
 		    background: url(img/首页-背景.png) no-repeat;
 			background-size: cover;
 		}
-
+		@media screen and (orientation:portrait) {
+		  /*竖屏样式*/
+		  body {
+		    transform-origin: 0 0;
+		    transform: rotateZ(90deg) translateY(-100%);   
+		  }
+		}
     </style>
 </head>
 
