@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>移动端入口</title>
     <style type="text/css">
         html {
@@ -15,7 +16,15 @@
 		    background: url(img/首页-背景.png) no-repeat;
 			background-size: cover;
 		}
-
+		
+  @media screen and (orientation:portrait) {
+      /*竖屏样式*/
+      body {
+	  
+        transform-origin: 0 0;    /*旋转中心为左上角*/
+        transform: rotateZ(90deg) translateY(-100%);   /*顺时针旋转90°，向右平移一个body的宽度*/
+      }
+    }
     </style>
 </head>
 
@@ -43,11 +52,11 @@
     // 窗口宽高
     let w = window.innerWidth, h = window.innerHeight   //文档显示区的宽度与高度
     // 缩放比例
-    let r = w / cw < h / ch ? w / cw : h / ch
+    let r = h / cw < w / ch ? h / cw : w / ch
 
     body.style.transform = `scale( ${r})`
     // 因为scale是以body的原中心点为基准进行缩放，所以缩放之后需要调整外边距，使其位于窗口的中心位置
-    body.style.marginLeft = (-(cw - r * cw) / 2 + (w - r * cw) / 2) + 'px'     //设置元素的左外边距
+    body.style.marginLeft =-420 + 'px'     //设置元素的左外边距
     body.style.marginTop = (-(ch - r * ch) / 2 + (h - r * ch) / 2) + 'px'      //设置元素的上外边距
     body.style.marginBottom = (-(h>ch?h:ch - r * ch)) + 'px'                   //设置元素的下外边距
     body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'                    //设置元素的右外边距
@@ -57,6 +66,7 @@
   // 监听窗口尺寸变化
   window.addEventListener('resize', windowResize);
 </script>
+
 
 <script type="text/javascript" language="javascript">
     function iFrameHeight() {
@@ -73,4 +83,5 @@
 </script>
 </body>
 </html>
+
 
