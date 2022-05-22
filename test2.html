@@ -15,13 +15,7 @@
 		    background: url(img/首页-背景.png) no-repeat;
 			background-size: cover;
 		}
-		@media screen and (orientation:portrait) {
-		  /*竖屏样式*/
-		  body {
-		    transform-origin: 0 0;
-		    transform: rotateZ(90deg) translateY(-100%);   
-		  }
-		}
+
     </style>
 </head>
 
@@ -47,7 +41,7 @@
   // 对body进行缩放
   function windowResize() {
     // 窗口宽高
-    let h = window.innerWidth, w = window.innerHeight   //文档显示区的宽度与高度
+    let w = window.innerWidth, h = window.innerHeight   //文档显示区的宽度与高度
     // 缩放比例
     let r = w / cw < h / ch ? w / cw : h / ch
 
