@@ -1,0 +1,210 @@
+/*长廊二级开启*/
+
+.myCLtitleAn {
+	-webkit-animation: myCLtitle ;
+	animation: myCLtitle;
+}
+@keyframes myCLtitle
+{
+	0%   {transform:rotate(180deg);}
+	40% {transform:rotate(360deg);}
+	100% {transform:translateX(-560px);}
+}
+@-webkit-keyframes myCLtitle /* Safari and Chrome */
+{
+	0%   {transform:rotate(180deg);}
+	40% {transform:rotate(360deg);}
+	100% {transform:translateX(-560px);}
+}
+@-moz-keyframes myCLtitle /* Firefox */
+{
+	0%   {transform:rotate(180deg);}
+	40% {transform:rotate(360deg);}
+	100% {transform:translateX(-560px);}
+}
+.myzuoAn {
+	-webkit-animation: myzuo ;
+	animation: myzuo;
+}
+@keyframes myzuo
+{
+	40% {left:0;}
+	100% {left:-560px;}
+}
+@-webkit-keyframes myzuo /* Safari and Chrome */
+{
+	40% {left:0;}
+	100% {left:-560px;}
+}
+@-moz-keyframes myzuo /* Firefox */
+{
+	40% {left:0;}
+	100% {left:-560px;}
+}
+
+.myyouAn {
+	-webkit-animation: myyou ;
+	animation: myyou;
+}
+@keyframes myyou
+{
+	35% {right:0;}
+	100% {right:-970px;}
+}
+@-webkit-keyframes myyou /* Safari and Chrome */
+{
+	35% {right:0;}
+	100% {right:-970px;}
+}
+@-webkit-keyframes myyou /* Firefox */
+{
+	35% {right:0;}
+	100% {right:-970px;}
+}
+
+@keyframes myrotate
+{
+	0%   {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@-webkit-keyframes myrotate /* Safari and Chrome */
+{
+	0%   {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@-moz-keyframes myrotate /* Firefox */
+{
+	0%   {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+.jianru{
+	animation: jianru;
+	-webkit-animation: jianru;
+	-moz-animation: jianru;
+}
+
+/*渐入*/
+@keyframes jianru {
+	from{opacity: 0; }
+	to{opacity: 1;}
+}
+@-webkit-keyframes jianru {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes jianru {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+/*放大渐入*/
+@keyframes fdjianru {
+	from{
+	opacity: 0; 
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0); /* 标准语法 */}
+	to{opacity: 1;
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+}
+@-webkit-keyframes xxjianru {
+	from{
+	opacity: 0; 
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0); /* 标准语法 */}
+	to{opacity: 1;
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+}
+@-moz-keyframes xxjianru {
+	from{
+	opacity: 0; 
+	-ms-transform: scale(0,0); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0); /* 标准语法 */}
+	to{opacity: 1;
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+}
+
+
+/*头像右移*/
+@keyframes rightmove {
+	from{left:-222px; }
+	to{left:1426px;}
+}
+@-webkit-keyframes rightmove {
+	from{left:-222px; }
+	to{left:1426px;}
+}
+@-moz-keyframes rightmove {
+	from{left:-222px; }
+	to{left:1426px;}
+}
+@keyframes rightMove {
+	from{left:-222px; }
+	to{left:1112px;}
+}
+@-webkit-keyframes rightMove {
+	from{left:-222px; }
+	to{left:1112px;}
+}
+@-moz-keyframes rightMove {
+	from{left:-222px; }
+	to{left:1112px;}
+}
+
+
+/*试卷出场*/
+@keyframes shijuan {
+	from{opacity: 0; }
+	to{opacity: 1;}
+}
+@-webkit-keyframes shijuan {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes shijuan {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+@keyframes suofang {
+	0%{ 
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+	100%{
+	-ms-transform: scale(0.96,0.96); /* IE 9 */
+	-webkit-transform: scale(0.96,0.96); /* Safari */
+	transform: scale(0.96,0.96); /* 标准语法 */}
+}
+@-webkit-keyframes suofang {
+	0%{ 
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+	100%{
+	-ms-transform: scale(0.96,0.96); /* IE 9 */
+	-webkit-transform: scale(0.96,0.96); /* Safari */
+	transform: scale(0.96,0.96); /* 标准语法 */}
+
+}
+@-moz-keyframes suofang {
+	0%{ 
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* 标准语法 */}
+	100%{
+	-ms-transform: scale(0.96,0.96); /* IE 9 */
+	-webkit-transform: scale(0.96,0.96); /* Safari */
+	transform: scale(0.96,0.96); /* 标准语法 */}
+
+}

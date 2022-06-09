@@ -1,0 +1,457 @@
+@charset "utf-8";
+/* CSS Document public*/
+*{font-family:"KaiTi","Times New Roman", Times, serif;padding: 0;margin:0;box-sizing:border-box;vertical-align:top;}
+html {background: white;height:100%;}
+body {margin: 0; overflow: hidden;height:100%;}
+#container{
+	height:100%;
+	background-size: cover;
+}
+
+
+/*长廊二级*/
+.zuo{position: absolute;z-index: 3;animation:myzuo 7s;-webkit-animation:myzuo 7s;-moz-animation:myzuo 7s;
+animation-delay:0.6s;-webkit-animation-delay:0.6s; animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.you{position: absolute;right:0;z-index: 3; animation:myyou 8s;-webkit-animation:myyou 8s;-moz-animation:myyou 7s;
+animation-delay:0.6s;-webkit-animation-delay:0.6s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.CLtitle{position: absolute;top:80px;left:850px;z-index: 3;transform:rotate(180deg);animation:myCLtitle 7s;-webkit-animation:myCLtitle 7s;-moz-animation:myCLtitle 7s;
+animation-delay:0.6s;-webkit-animation-delay:0.6s; animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+#Rmove{position: fixed; left:0;top:0; width:120px;background-color: white;opacity: 0; height: 100%;z-index:2;}
+#Lmove{position: fixed; right:0;top:0; width:120px;background-color: #d8d8d8;opacity: 0; height: 100%;z-index:2;}
+.yuanquan{position: absolute;top:53px;left:41px;}
+.pai p{position: absolute;left:62px;top:68px;font-size:3.1rem;text-decoration: none; color:rgb(218, 33, 24);text-shadow: 1px 1px 0px #b11c1c, -1px 1px 0px #b11c1c;}
+.pai a:link{text-decoration: none;  font-weight: bold;}
+.yuanquan:hover{animation:myrotate 4s;-webkit-animation:myrotate 4s;-moz-animation:myrotate 4s;
+animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;
+animation-timing-function:linear;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;/*匀速旋转*/}
+.pai p:hover{animation:myrotate 4s;-webkit-animation:myrotate 4s;-moz-animation:myrotate 4s;
+animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;
+animation-timing-function:linear;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;/*匀速旋转*/	
+}
+#CLpaizi1{position: absolute; top:168px; left:880px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi2{position: absolute; top:349px; left:880px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi3{position: absolute; top:528px; left:880px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi4{position: absolute; top:708px; left:880px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi5{position: absolute; top:168px; left:1110px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi6{position: absolute; top:349px; left:1110px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi7{position: absolute; top:528px; left:1110px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi8{position: absolute; top:708px; left:1110px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi9{position: absolute; top:168px; left:1340px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi10{position: absolute; top:349px; left:1340px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi11{position: absolute; top:528px; left:1340px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi12{position: absolute; top:708px; left:1340px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi13{position: absolute; top:168px; left:1570px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi14{position: absolute; top:349px; left:1570px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi15{position: absolute; top:528px; left:1570px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi16{position: absolute; top:708px; left:1570px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi17{position: absolute; top:168px; left:1800px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi18{position: absolute; top:349px; left:1800px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi19{position: absolute; top:528px; left:1800px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi20{position: absolute; top:708px; left:1800px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi21{position: absolute; top:168px; left:2030px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi22{position: absolute; top:349px; left:2030px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi23{position: absolute; top:528px; left:2030px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi24{position: absolute; top:708px; left:2030px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi25{position: absolute; top:168px; left:2260px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi26{position: absolute; top:349px; left:2260px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi27{position: absolute; top:528px; left:2260px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi28{position: absolute; top:708px; left:2260px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi29{position: absolute; top:168px; left:2490px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi30{position: absolute; top:349px; left:2490px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi31{position: absolute; top:528px; left:2490px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi32{position: absolute; top:708px; left:2490px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi33{position: absolute; top:168px; left:2720px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi34{position: absolute; top:349px; left:2720px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi35{position: absolute; top:528px; left:2720px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi36{position: absolute; top:708px; left:2720px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi37{position: absolute; top:168px; left:2950px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi38{position: absolute; top:349px; left:2950px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi39{position: absolute; top:528px; left:2950px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi40{position: absolute; top:708px; left:2950px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi41{position: absolute; top:168px; left:3180px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi42{position: absolute; top:349px; left:3180px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi43{position: absolute; top:528px; left:3180px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi44{position: absolute; top:708px; left:3180px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi45{position: absolute; top:168px; left:3410px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi46{position: absolute; top:349px; left:3410px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi47{position: absolute; top:528px; left:3410px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi48{position: absolute; top:708px; left:3410px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi49{position: absolute; top:168px; left:3640px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi50{position: absolute; top:349px; left:3640px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi51{position: absolute; top:528px; left:3640px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi52{position: absolute; top:708px; left:3640px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi53{position: absolute; top:168px; left:3870px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi54{position: absolute; top:349px; left:3870px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi55{position: absolute; top:528px; left:3870px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi56{position: absolute; top:708px; left:3870px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi57{position: absolute; top:168px; left:4100px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi58{position: absolute; top:349px; left:4100px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi59{position: absolute; top:528px; left:4100px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+#CLpaizi60{position: absolute; top:708px; left:4100px;width:165px; height:165px; background: url(../img/gallery/长廊二级-牌子.png);}
+
+
+
+
+/*长廊三级*/
+.radical{display:flex;justify-content:center;height:100%;padding-top:60px;}
+.radicalp{padding-left:20px; display:flex;justify-content:center;font-weight:600; font-size: 3rem;color:white;letter-spacing:30px;z-index:1;margin-top:-74px;}
+.fhcl{position: absolute;top:50px;right:70px;}
+.Scroll{display:flex;justify-content:center;height:100%;margin-top: 22px;}
+.cloud1{position: absolute;bottom:50px;left:65px;}
+.cloud2{position: absolute;top:161px;right:20px;}
+#brand1{position: absolute;z-index:2;top:550px;left:350px;cursor: pointer;}
+#brand2{position: absolute;z-index:2;top:417px;left:533px;cursor: pointer;}
+#brand3{position: absolute;z-index:2;top:542px;left:722px;cursor: pointer;}
+#brand4{position: absolute;z-index:2;top:505px;left:935px;cursor: pointer;}
+#brand5{position: absolute;z-index:2;top:677px;left:1100px;cursor: pointer;}
+#brand6{position: absolute;z-index:2;top:560px;left:1330px;cursor: pointer;}
+#brand7{position: absolute;z-index:2;top:425px;left:1550px;cursor: pointer;}
+.brand p{font-size: 2.3rem;color:rgb(124,98,63);position:relative;left:15px;top:-72px;text-shadow:  0 0 1px rgb(100,77,49);}
+.page img{width:16%;}
+#page1{position: absolute;top:185px;left:80px;}
+#page2{position: absolute;top:270px;left:80px;}
+#page3{position: absolute;top:355px;left:80px;}
+#page4{position: absolute;top:440px;left:80px;}
+#page5{position: absolute;top:525px;left:80px;}
+#page6{position: absolute;top:610px;left:80px;}
+#page7{position: absolute;top:695px;left:80px;}
+#page8{position: absolute;top:780px;left:80px;}
+#page9{position: absolute;top:865px;left:80px;}
+
+
+/*文字解释卡片*/
+.modal{display: none; /* 默认隐藏 */z-index: 3; /* 设置在顶层 */position: fixed; /* 固定定位 */left: 0;top: 0;width: 100%; height: 100%; background-color: rgba(0,0,0,0.1); }
+.modal-content {background:url(../img/gallery/文字解释底图.png);width: 606px; height:821px;margin:auto;position: relative;top:180px;}
+.close{position:absolute;left:440px;top: 692px;cursor: pointer;}
+#zi{color:rgb(41,41,41);font-size: 6.7rem;position:absolute;top:115px;left:110px;}
+#pinyin{color:rgb(88, 88, 88);font-size:1.6rem;position:absolute;top:111px;left:401px;font-weight: 600;letter-spacing:-1px;}
+#bihua{color:rgb(88, 88, 88);font-size:1.9rem;position:absolute;top:161px;left:406px;font-weight: 600;letter-spacing:1px;}
+#wubi{color:rgb(88, 88, 88);font-size:1.9rem;position:absolute;top:208px;left:406px;font-weight: 600;letter-spacing:3px;}
+#shiyi{color:rgb(83, 83, 83);font-size:1.6rem;position:absolute;top:320px;left:90px;letter-spacing:1px;text-shadow:  0 0 1px rgb(83, 83, 83);line-height: 2.5rem;width:340px;height: 365px;overflow-y:hidden;word-wrap:break-word;}
+#duyin{position:absolute;top:163px;left:477px;width:5%;cursor: pointer;}
+
+
+/*生僻字测试 —— 剧情1/2/3*/
+.fanhui{position:absolute;right:30px;top:20px;}
+#jixu{position:absolute;right:410px;top:980px; cursor:pointer;z-index: 2;}
+.duihua{position:absolute;bottom:0;}
+#jixu,.duihua{ animation:jianru 1s;-webkit-animation:jianru 1s;-moz-animation:jianru 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.xuanxiang1{position: absolute;top:206px;left:609px;cursor: pointer;display:none;}
+.xuanxiang2{position: absolute;top:406px;left:609px;cursor: pointer;display:none;}
+.xuanxiang1,.xuanxiang2{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:300ms;-webkit-animation-delay:300ms;-moz-animation-delay:300ms;}
+.duihua2{position:absolute;left:1011px;top:107px;display:none;opacity: 0;
+animation:jianru 0.75s;-webkit-animation:jianru 0.75s;-moz-animation:jianru 0.75s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:950ms;-webkit-animation-delay:950ms;-moz-animation-delay:950ms;}
+.duihua3{position:absolute;left:1074px;top:556px;display:none;opacity: 0;
+animation:jianru 0.75s;-webkit-animation:jianru 0.75s;-moz-animation:jianru 0.75s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:2.4s;-webkit-animation-delay:2.4s;-moz-animation-delay:2.4s;}
+.touxiang1{position:absolute;top:79px;display:none;
+animation:rightmove 900ms;-webkit-animation:rightmove 900ms;-moz-animation:rightmove 900ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.touxiang2{position:absolute;left:-400px;top:446px;display:none;
+animation:rightMove 900ms;-webkit-animation:rightMove 900ms;-moz-animation:rightMove 900ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1.4s;-webkit-animation-delay:1.4s;-moz-animation-delay:1.4s;}
+.startbtn{position:absolute;left:1265px;top:875px;display:none;opacity: 0;cursor: pointer;
+animation:fdjianru 0.6s;-webkit-animation:fdjianru 0.6 s;-moz-animation:fdjianru 0.6s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:3.1s;-webkit-animation-delay:3.1s;-moz-animation-delay:3.1s;
+-webkit-transition: top 600ms;transition: top 600ms;}
+.startbtn:hover{top:860px;}
+
+
+/*生僻字测试 —— 剧情3选择试卷*/
+#shijuan1{position:absolute;left:200px;top:335px;display:none;cursor: pointer;opacity: 0;
+animation:shijuan 1s;-webkit-animation:shijuan 1s;-moz-animation:shijuan 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+#shijuan2{position:absolute;left:520px;top:335px;display:none;cursor: pointer;opacity: 0;
+animation:shijuan 1s;-webkit-animation:shijuan 1s;-moz-animation:shijuan 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:0.5s;-webkit-animation-delay:0.5s;-moz-animation-delay:0.5s;}
+#shijuan3{position:absolute;left:850px;top:335px;display:none;cursor: pointer;opacity: 0;
+animation:shijuan 1s;-webkit-animation:shijuan 1s;-moz-animation:shijuan 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1s;-webkit-animation-delay:1s;-moz-animation-delay:1s;}
+#shijuan4{position:absolute;left:1180px;top:335px;display:none;cursor: pointer;opacity: 0;
+animation:shijuan 1s;-webkit-animation:shijuan 1s;-moz-animation:shijuan 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1.5s;-webkit-animation-delay:1.5s;-moz-animation-delay:1.5s;}
+#shijuan5{position:absolute;left:1510px;top:335px;display:none;cursor: pointer;opacity: 0;
+animation:shijuan 1s;-webkit-animation:shijuan 1s;-moz-animation:shijuan 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:2s;-webkit-animation-delay:2s;-moz-animation-delay:2s;}
+#shijuan1,#shijuan2,#shijuan3,#shijuan4,#shijuan5{ -webkit-transition: -webkit-transform 600ms;transition: transform  600ms;}
+#shijuan1:hover,#shijuan2:hover,#shijuan3:hover,#shijuan4:hover,#shijuan5:hover{    
+	-webkit-transform: scale(1.1,1.1); 
+    transform:scale(1.1,1.1);}
+
+
+
+/*生僻字测试 —— 判断题*/
+#PDnext{position:absolute;top:922px;left:17px;display:none;opacity: 0;cursor: pointer;width:250px;height: 153px;
+-webkit-animation: fdjianru 600ms linear both;animation: fdjianru 600ms linear both;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+-webkit-transition: width 600ms, height 600ms;transition: width 600ms, height 600ms;}
+#PDnext:hover{width:240px;height:147px;}
+#explain{position:absolute;top:732px;left:155px;background: url(../img/playtest/测试判断题-答案框.png);width:487px;height: 283px;display:none;
+animation:jianru 0.5s;-webkit-animation:jianru 0.5s;-moz-animation:jianru 0.5s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+#PDexplain{position:absolute;top:80px;left:55px;width:372px;heigth:181px;font-size: 28px;word-wrap:break-word;line-height: 38px;color:#6b6a6a;font-weight: 600;letter-spacing:1px;}
+#PDtitle{position: absolute;top:550px;left:902px;width:756.6px;height: 281px;
+color:#362e2e;font-size: 36px;word-wrap:break-word;line-height:60px;letter-spacing:2px;display:none;}
+#PDtrue{position:absolute;left:938px;top:907px;display:none;cursor: pointer; -webkit-transition: -webkit-transform 600ms;transition: transform  600ms;}
+#PDfalse{position:absolute;left:1341px;top:907px;display:none;cursor: pointer;-webkit-transition: -webkit-transform 600ms;transition: transform  600ms;}
+#RaW1{position:absolute;left:1091px;top:935px;display:none;}
+#RaW2{position:absolute;left:1509px;top:935px;display:none;}
+#PDtrue:hover,#PDfalse:hover{
+    -webkit-transform: scale(0.96,0.96); /* Chrome, Safari, Opera */
+    transform:scale(0.96,0.96);
+}
+
+/*生僻字测试 —— 剧情4/5/6*/
+#next1{position:absolute;right:410px;top:980px; cursor:pointer;z-index: 2;display: none;}
+.duihua4{position:absolute;bottom:0;display: none;}
+#next1,.duihua4{animation:jianru 1s;-webkit-animation:jianru 1s;-moz-animation:jianru 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+#next2{position:absolute;right:410px;top:980px; cursor:pointer;z-index: 2;display: none;}
+.xuanxiang3{position: absolute;top:206px;left:609px;cursor: pointer;display:none;}
+.xuanxiang4{position: absolute;top:406px;left:609px;cursor: pointer;display:none;}
+.xuanxiang3,.xuanxiang4{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:300ms;-webkit-animation-delay:300ms;-moz-animation-delay:300ms;}
+
+
+
+/*生僻字测试 —— 选择题剧情 */
+#next3{position:absolute;right:410px;top:980px; cursor:pointer;z-index: 2;display: none;}
+.duihua5{position:absolute;bottom:0;display: none;}
+#next3,.duihua5{animation:jianru 1s;-webkit-animation:jianru 1s;-moz-animation:jianru 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+
+/*生僻字测试 —— 选择题 */
+.Option1div{position:absolute;cursor: pointer;left:619px;top:105px;display: none;}
+.Option2div{position:absolute;cursor: pointer;left:584px;top:289px;display: none;}
+.Option3div{position:absolute;cursor: pointer;left:619px;top:478px;display: none;}
+#option1{cursor: pointer;width:480px;height:40px;position: absolute;left:50%;margin-left: -240px; overflow: hidden;display: none;
+font-size: 34px;text-align: center;top:187px;letter-spacing: 2px;text-shadow:0 0 1px #995e2e,0 0 1px #995e2e; color:#5d391c;}
+#option2{cursor: pointer;width:480px;height:40px;position: absolute;left:50%;margin-left: -240px; overflow: hidden;display: none;
+font-size: 34px;text-align: center;top:370px;letter-spacing: 2px;text-shadow:0 0 1px #995e2e,0 0 1px #995e2e; color:#5d391c;}
+#option3{cursor: pointer;width:480px;height:40px;position: absolute;left:50%;margin-left: -240px; overflow: hidden;display: none;
+font-size: 34px;text-align: center;top:559px;letter-spacing: 2px;text-shadow:0 0 1px #995e2e,0 0 1px #995e2e; color:#5d391c;}
+.Option1div,#option1{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:800ms;-webkit-animation-delay:800ms;-moz-animation-delay:800ms;}
+.Option2div,#option2{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1500ms;-webkit-animation-delay:1500ms;-moz-animation-delay:1500ms;}
+.Option3div,#option3{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:2200ms;-webkit-animation-delay:2200ms;-moz-animation-delay:2200ms;}
+#XZtitle{position: absolute;top:816px;left:615px;font-size: 35px;color:#362516;width:1174px;height: 131px;
+word-wrap:break-word;line-height:55px;letter-spacing:1px;display: none;animation:jianru 500ms;-webkit-animation:jianru 500ms;-moz-animation:jianru 500ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.Option1div,#option1,.Option2div,#option2,.Option3div,#option3{-webkit-transition: -webkit-transform 800ms;transition: transform  800ms;}
+.Option1div:hover,#option1:hover,.Option2div:hover,#option2:hover,.Option3div:hover,#option3:hover{-webkit-transform: scale(0.96,0.96);transform:scale(0.96,0.96);}
+#RaWA{position:absolute;left:1170px;top:168px;}
+#RaWB{position:absolute;left:1170px;top:351px;}
+#RaWC{position:absolute;left:1170px;top:542px;}
+#XZnext{position:absolute;left:1661px;top:976px;display: none;cursor: pointer;}
+
+
+/*生僻字测试 —— 结尾剧情 */
+.duihua6{position:absolute;bottom:0;display: none;}
+.xuanxiang5{position: absolute;top:206px;left:609px;cursor: pointer;display:none;}
+.xuanxiang6{position: absolute;top:406px;left:609px;cursor: pointer;display:none;}
+.xuanxiang5,.xuanxiang6{opacity: 0;-webkit-transform: scale(0,0); /* Safari */transform: scale(0,0);
+animation:fdjianru 800ms;-webkit-animation:fdjianru 800ms;-moz-animation:fdjianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:300ms;-webkit-animation-delay:300ms;-moz-animation-delay:300ms;}
+#next4{position:absolute;right:410px;top:980px; cursor:pointer;z-index: 2;display: none;}
+#next4,.duihua6{animation:jianru 1s;-webkit-animation:jianru 1s;-moz-animation:jianru 1s;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+
+
+/*生僻字测试 —— 继续按钮放大效果 */
+#jixu,#next1,#next2,#next3,#next4,#XZnext{-webkit-transition: -webkit-transform 800ms;transition: transform  800ms;}
+#jixu:hover,#next1:hover,#next2:hover,#next3:hover,#next4:hover,#XZnext:hover{-webkit-transform: scale(1.05,1.05);transform:scale(1.05,1.05);}
+.fanhui{-webkit-transition: -webkit-transform 800ms;transition: transform  800ms;}
+.fanhui:hover{-webkit-transform: scale(0.96,0.96);transform:scale(0.96,0.96);}
+
+
+
+
+
+/*生僻字简介*/
+.JJtitle{position: absolute;top:71px;left:248px;}
+/*渐入*/
+@keyframes Jianru {
+	from{opacity: 0; }
+	to{opacity: 1;}
+}
+@-webkit-keyframes Jianru {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes Jianru {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.hand{position: absolute;top:528px;left:219px;}
+.ink{position: absolute;top:788px;left:149px;}
+
+.JStitle{position: absolute;top:90px;left:828px;
+animation:downmove 500ms;-webkit-animation:downmove 500ms;-moz-animation:downmove 500ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+
+.JScontent{position: absolute;top:204px;left:964px;opacity: 0;
+animation:Jianru 800ms;-webkit-animation:Jianru 800ms;-moz-animation:Jianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:600ms;-webkit-animation-delay:600ms;-moz-animation-delay:600ms;}
+
+.LStitle{position: absolute;left:828px;top:-200px;
+animation:downmove2 600ms;-webkit-animation:downmove2 600ms;-moz-animation:downmove2 600ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1500ms;-webkit-animation-delay:1500ms;-moz-animation-delay:1500ms;}
+.LScontent{position: absolute;top:381px;left:902px;opacity: 0;
+animation:Jianru 1000ms;-webkit-animation:Jianru 1000ms;-moz-animation:Jianru 1000ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:2200ms;-webkit-animation-delay:2200ms;-moz-animation-delay:2200ms;}
+
+/*标题下移*/
+@keyframes downmove {
+	from{top:-222px; }
+	to{top:90px;}
+}
+@-webkit-keyframes Rmove {
+	from{top:-222px; }
+	to{top:90px;}
+	}
+@-moz-keyframes Rmove {
+	from{top:-222px; }
+	to{top:90px;}
+}
+
+
+@keyframes downmove2 {
+	from{top:-222px; }
+	to{top:323px;}
+}
+@-webkit-keyframes downmove2 {
+	from{top:-222px; }
+	to{top:323px;}
+	}
+@-moz-keyframes downmove2 {
+	from{top:-222px; }
+	to{top:323px;}
+}
+	
+#pagetwo{display: none;}
+.di1ye{position: absolute;top:984px;left:1285px;cursor: pointer;z-index: 3;-webkit-transition: -webkit-transform 800ms;transition: transform  800ms;}
+.di2ye{position: absolute;top:984px;left:1380px;cursor: pointer;z-index: 3;-webkit-transition: -webkit-transform 800ms;transition: transform  800ms;}
+.di1ye:hover,.di2ye:hover{-webkit-transform: scale(1.06,1.06);transform:scale(1.06,1.06);}
+.YYtitle{position: absolute;top:105px;left:828px; 
+animation:downmove 500ms;-webkit-animation:downmove 500ms;-moz-animation:downmove 500ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;}
+.YYcontent{position: absolute;top:188px;left:893px;opacity: 0;
+animation:Jianru 800ms;-webkit-animation:Jianru 800ms;-moz-animation:Jianru 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:600ms;-webkit-animation-delay:600ms;-moz-animation-delay:600ms;}
+
+.backHome{position: absolute;top:17px;left:1750px;}
+
+
+
+
+
+
+/*首页*/
+.jjbutton{position: absolute; top:90px; left:244px;}
+.clbutton{position: absolute; top:658px; left:492px;}
+.csbutton{position: absolute; top:327px; left:1396px;}
+.JJxuanzhuan{position: absolute; top:78px; left:246px;}
+.CLxuanzhuan{position: absolute; top:647px; left:493px;}
+.CSxuanzhuan{position: absolute; top:316px; left:1397px;}
+
+.JJxuanzhuan,.CLxuanzhuan,.CSxuanzhuan{
+	animation:XZ 6s linear infinite;-webkit-animation:XZ 6s linear infinite;-moz-animation:XZ 6s linear infinite;
+}
+
+@keyframes XZ {
+	0%{ 
+	-webkit-transform: rotate(0deg); /* Safari */
+	transform: rotate(0deg); /* 标准语法 */}
+	25%{
+	-webkit-transform: rotate(45deg); /* Safari */
+	transform: rotate(45deg); /* 标准语法 */}
+	50%{
+	-webkit-transform: rotate(0deg); /* Safari */
+	transform: rotate(0deg); /* 标准语法 */	}
+	75%{
+	-webkit-transform: rotate(-20deg); /* Safari */
+	transform: rotate(-20deg); /* 标准语法 */		}
+	100%{
+	-webkit-transform: rotate(0deg); /* Safari */
+	transform: rotate(0deg); /* 标准语法 */		
+	}
+}
+
+.bird{position: absolute;left:1769px;top:-13px;}
+.zou{position: absolute;left:903px;top:70px;}
+.jin{position: absolute;left:840px;top:161px;}
+.sheng{position: absolute;left:976px;top:227px;}
+.pi{position: absolute;left:846px;top:335px;}
+.zi{position: absolute;left:986px;top:408px;}
+.de{position: absolute;left:907px;top:545px;}
+.shi{position: absolute;left:871px;top:649px;}
+.jie{position: absolute;left:983px;top:674px;}
+
+.dibu{position: absolute;left:750px;opacity: 0;
+animation:upmove 800ms;-webkit-animation:upmove 800ms;-moz-animation:upmove 800ms;
+animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+animation-delay:1200ms;-webkit-animation-delay:1200ms; }
+
+.zou,.jin,.sheng,.pi,.zi,.de,.shi,.jie{
+	opacity: 0;animation:JianRu 1800ms;-webkit-animation:JianRu 1800ms;-moz-animation:JianRu 1800ms;
+	animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;
+}
+
+
+
+/*渐入*/
+@keyframes JianRu {
+	from{opacity: 0; }
+	to{opacity: 1;}
+}
+@-webkit-keyframes JianRu  {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes JianRu {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+/*底部上移*/
+@keyframes upmove {
+	from{top:1100px;opacity: 0;}
+	to{top:908px;opacity: 1;}
+}
+@-webkit-keyframes upmove {
+	from{top:1100px;opacity: 0;}
+	to{top:908px;opacity: 1;}
+	}
+@-moz-keyframes upmove {
+	from{top:1100px;opacity: 0;}
+	to{top:908px;opacity: 1;}
+}
+
