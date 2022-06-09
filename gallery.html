@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生僻字长廊</title>
+		<link rel="stylesheet" href="../css/animation.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/scroll.css">
+		<link rel="stylesheet" href="../css/animate2.css">
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<style type="text/css">
+            body{	`
+				overflow-x: scroll;
+				overflow-y: hidden;
+			}
+			#container{
+			    position: relative;
+				overflow-x: hidden;
+				overflow-y: hidden;
+				height: 1080px;
+				background-color: white;
+			}
+			#changtu{
+				width:5020px;position: absolute;
+			}
+		</style>
+	</head>
+	
+	<body id="body" >  
+		<div id="container" class="main width=100%" onload="findAllchar()">
+			
+        <img src="../img/gallery/长廊二级-左.jpg" class="zuo myzuoAn" id="biaoti1">
+		<img src="../img/gallery/长廊二级-右.jpg" class="you myyouAn" id="biaoti2">
+		<img src="../img/gallery/生僻字长廊标题.png" class="CLtitle myCLtitleAn" id="biaoti3">
+
+
+        <div id="changtu"> 
+			
+			
+		<img src="../img/gallery/长廊二级展开背景图.jpg" style="position: absolute;">
+	
+		
+		<div class="pai" id="pai" style="position: absolute;" >
+			  <div id="CLpaizi1"><a ><p id="bushou1"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi2"><a ><p id="bushou2"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi3"><a ><p id="bushou3"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi4"><a ><p id="bushou4"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi5"><a ><p id="bushou5"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi6"><a ><p id="bushou6"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi7"><a ><p id="bushou7"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi8"><a ><p id="bushou8"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi9"><a ><p id="bushou9"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi10"><a ><p id="bushou10"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi11"><a ><p id="bushou11"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi12"><a ><p id="bushou12"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi13"><a ><p id="bushou13"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi14"><a ><p id="bushou14"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi15"><a ><p id="bushou15"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi16"><a ><p id="bushou16"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi17"><a ><p id="bushou17"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi18"><a ><p id="bushou18"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi19"><a ><p id="bushou19"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+			  <div id="CLpaizi20"><a ><p id="bushou20"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi21"><a ><p id="bushou21"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi22"><a ><p id="bushou22"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi23"><a ><p id="bushou23"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi24"><a ><p id="bushou24"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi25"><a ><p id="bushou25"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi26"><a ><p id="bushou26"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi27"><a ><p id="bushou27"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi28"><a ><p id="bushou28"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi29"><a ><p id="bushou29"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi30"><a ><p id="bushou30"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi31"><a ><p id="bushou31"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi32"><a ><p id="bushou32"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi33"><a ><p id="bushou33"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi34"><a ><p id="bushou34"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi35"><a ><p id="bushou35"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi36"><a ><p id="bushou36"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi37"><a ><p id="bushou37"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi38"><a ><p id="bushou38"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi39"><a ><p id="bushou39"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi40"><a ><p id="bushou40"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi41"><a ><p id="bushou41"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi42"><a ><p id="bushou42"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi43"><a ><p id="bushou43"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi44"><a ><p id="bushou44"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi45"><a ><p id="bushou45"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi46"><a ><p id="bushou46"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi47"><a ><p id="bushou47"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi48"><a ><p id="bushou48"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi49"><a ><p id="bushou49"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi50"><a ><p id="bushou50"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi51"><a ><p id="bushou51"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi52"><a ><p id="bushou52"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi53"><a ><p id="bushou53"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi54"><a ><p id="bushou54"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi55"><a ><p id="bushou55"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi56"><a ><p id="bushou56"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi57"><a ><p id="bushou57"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi58"><a ><p id="bushou58"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi59"><a ><p id="bushou59"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		      <div id="CLpaizi60"><a ><p id="bushou60"></p><img src="../img/gallery/长廊二级-牌子圆圈.png" class="yuanquan"></a></div>
+		  </div>
+		  
+		  
+		 </div> 
+		  
+		  
+		<div class="denglong" id="dl" style="position:fixed;left:1600px;">
+			<a href="homepage.html">
+				<img class="denglong2" src="../img/gallery/长廊二级-返回首页按钮.png" style="width:90%;">
+			</a>
+		</div>  
+		
+		<div id="Rmove"></div>
+		<div id="Lmove"></div>
+		
+		 </div> 
+		 
+		
+		<script src="../js/style.js"></script>
+		<script src="../js/scroll.js"></script> 
+		<script src="../js/animate.js"></script>
+		
+		
+		
+		<script type="text/javascript">
+			  // body宽高
+			  let cw = 1920,ch = 1080
+			  let body = document.getElementById('body')
+			  body.style.width = `${cw}px`   //设置或返回块级元素或绝对/固定位置的元素的宽度
+			  body.style.height = `${ch}px`  //设置或返回块级元素或绝对/固定位置的元素的高度
+			
+			  // 对body进行缩放
+			  function windowResize() {
+			    // 窗口宽高
+			    let w = window.innerWidth, h = window.innerHeight   //文档显示区的宽度与高度
+			    // 缩放比例
+			    let r = w / cw < h / ch ? w / cw : h / ch
+			
+			    body.style.transform = `scale( ${r})`
+			    // 因为scale是以body的原中心点为基准进行缩放，所以缩放之后需要调整外边距，使其位于窗口的中心位置
+			    body.style.marginLeft = (-(cw - r * cw) / 2 + (w - r * cw) / 2) + 'px'     //设置元素的左外边距
+			    body.style.marginTop = (-(ch - r * ch) / 2 + (h - r * ch) / 2) + 'px'      //设置元素的上外边距
+			    body.style.marginBottom = (-(h>ch?h:ch - r * ch)) + 'px'                   //设置元素的下外边距
+			    body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'                    //设置元素的右外边距
+			  } 
+			
+			  windowResize()
+			  // 监听窗口尺寸变化
+			  window.addEventListener('resize', windowResize);
+			</script>
+			
+			
+	</body>
+	
+</html>

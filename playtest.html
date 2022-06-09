@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生僻字测试</title>
+		<link rel="stylesheet" href="../css/animation.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<style type="text/css">
+		  body{
+				overflow: hidden;
+			}
+          #container{
+			    overflow: hidden;
+			
+			}	
+		</style>
+		<script src="../js/playtest.js"></script>
+		<script src="../js/style.js"></script>
+	</head>
+
+	<body id="body">
+		
+		<div id="container" class="main width=100%">
+			
+			<!--公共-->
+			<img src="../img/playtest/测试对话剧情1-背景图.jpg"  style="position: absolute;" id="JQbeijing">
+			<a href="homepage.html" class="fanhui"><img src="../img/playtest/测试-退出按钮.png" ></a>
+			
+			<!--剧情1-->
+			<img src="../img/playtest/测试对话剧情1-文字对话.png" class="duihua">
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="jixu">
+			
+			<!--剧情2-->			
+			<img src="../img/playtest/测试对话剧情2-对话选项1.png" class="xuanxiang1">
+			<a href="homepage.html"  class="xuanxiang2"><img src="../img/playtest/测试对话剧情2-对话选项2.png"></a>
+			
+			<!--剧情3-->	
+			<img src="../img/playtest/测试对话剧情3-对话框上.png" class="duihua2">
+			<img src="../img/playtest/测试对话剧情3-考官头像.png" class="touxiang1">
+			<img src="../img/playtest/测试对话剧情3-对话框下.png" class="duihua3">
+			<img src="../img/playtest/测试对话剧情3-考官头像.png" class="touxiang2">
+			<img src="../img/playtest/测试对话剧情3-开始答题按钮.png" class="startbtn">
+			
+			<!--剧情3选题-->	
+			<div class="shijuan">
+			<img src="../img/playtest/测试对话剧情3-卷一按钮.png" id="shijuan1" value="1">
+			<img src="../img/playtest/测试对话剧情3-卷二按钮.png" id="shijuan2" value="2">
+			<img src="../img/playtest/测试对话剧情3-卷三按钮.png" id="shijuan3" value="3">
+			<img src="../img/playtest/测试对话剧情3-卷四按钮.png" id="shijuan4" value="4">
+			<img src="../img/playtest/测试对话剧情3-卷五按钮.png" id="shijuan5" value="5">
+			</div>
+			
+			<!--判断题-->	
+			<div id="explain"><div id="PDexplain"></div></div>
+			<img src="../img/playtest/测试判断题-下一题按钮.png" id="PDnext">
+			<div id="PDtitle"></div>
+
+			<img src="../img/playtest/测试判断题-正确选项框.png" id="PDtrue" value="A" onclick="judgePDtrue()">
+			<img src="../img/playtest/测试判断题-错误选项框.png" id="PDfalse" value="B" onclick="judgePDfalse()">
+			<img src="../img/playtest/测试判断题-对号.png" id="RaW1">
+			<img src="../img/playtest/测试判断题-叉号.png" id="RaW2">
+			
+			<!--剧情4-->	
+			<img src="../img/playtest/测试对话剧情4-文字对话.png" class="duihua4">
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="next1">
+			
+			<!--剧情5-->
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="next2">
+			
+			<!--剧情6-->
+			<img src="../img/playtest/测试对话剧情6-对话选项1.png" class="xuanxiang3">
+			<img src="../img/playtest/测试对话剧情6-对话选项2.png" class="xuanxiang4" onclick="backToXuanti1()">
+			
+			<!--选择题剧情+题目-->
+			<img class="duihua5">
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="next3">
+			<img src="../img/playtest/测试-对话选项框.png" class="Option1div" value="A" onclick="judgeXZA()">
+			<p id="option1" value="A" onclick="judgeXZA()"></p>
+			<img src="../img/playtest/测试-反向对话选项框.png" class="Option2div" value="B" onclick="judgeXZB()">
+			<p id="option2" value="B" onclick="judgeXZB()"></p>
+			<img src="../img/playtest/测试-对话选项框.png" class="Option3div" value="C" onclick="judgeXZC()">
+			<p id="option3" value="C" onclick="judgeXZC()"></p>
+			<div id="XZtitle"></div>
+	
+			<img id="RaWA">
+			<img id="RaWB">
+			<img id="RaWC">
+			
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="XZnext">
+			
+			
+	        <!--剧情结尾-->
+			<img src="../img/playtest/测试结尾剧情-文字对话.png" class="duihua6">
+			<img src="../img/playtest/测试对话剧情-点击继续按钮.png" id="next4">
+			<img src="../img/playtest/测试结尾剧情-重新开始按钮.png" class="xuanxiang5"  onclick="backToXuanti2()">
+			<a href="homepage.html" class="xuanxiang6"><img src="../img/playtest/测试结尾剧情-结束测试按钮.png"></a>
+			
+			
+			
+			
+		</div> 
+	
+	
+	
+
+	<script src="../js/playtest.js"></script>
+	<script type="text/javascript">
+		  // body宽高
+		  let cw = 1920,ch = 1080
+		  let body = document.getElementById('body')
+		  body.style.width = `${cw}px`   //设置或返回块级元素或绝对/固定位置的元素的宽度
+		  body.style.height = `${ch}px`  //设置或返回块级元素或绝对/固定位置的元素的高度
+		
+		  // 对body进行缩放
+		  function windowResize() {
+		    // 窗口宽高
+	
+			let w = window.innerWidth, h = window.innerHeight   //文档显示区的宽度与高度
+		    // 缩放比例
+		    let r = w / cw < h / ch ? w / cw : h / ch
+		
+		    body.style.transform = `scale( ${r})`
+		    // 因为scale是以body的原中心点为基准进行缩放，所以缩放之后需要调整外边距，使其位于窗口的中心位置
+		    body.style.marginLeft = (-(cw - r * cw) / 2 + (w - r * cw) / 2) + 'px'     //设置元素的左外边距
+		    body.style.marginTop = (-(ch - r * ch) / 2 + (h - r * ch) / 2) + 'px'      //设置元素的上外边距
+		    body.style.marginBottom = (-(h>ch?h:ch - r * ch)) + 'px'                   //设置元素的下外边距
+		    body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'                    //设置元素的右外边距
+		  } 
+		
+		  windowResize()
+		  // 监听窗口尺寸变化
+		  window.addEventListener('resize', windowResize);
+		</script>
+			
+	</body>
+</html>
