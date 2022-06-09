@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生僻字简介</title>
+		<style>
+			#container{
+			    background: url(../img/introduction/简介-背景图.jpg) no-repeat;
+				
+			}
+		</style>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	
+	<body id="body">
+		
+		<div id="container" class="main width=100%">
+		
+		
+		<img src="../img/introduction/简介-简介标题.png" class="JJtitle">
+		<img src="../img/introduction/简介-手拿笔.png" class="hand">
+		<img src="../img/introduction/简介-墨水.png" class="ink">
+				
+		<div id="pageone">
+			
+			<img src="../img/introduction/简介-解释标题.png" class="JStitle">
+			<img src="../img/introduction/简介-解释文字.png" class="JScontent">
+			
+			<img src="../img/introduction/简介-历史标题.png" class="LStitle">
+			<img src="../img/introduction/简介-历史文字.png" class="LScontent">
+			
+		</div>
+					
+		
+		<div id="pagetwo">
+			
+			<img src="../img/introduction/简介-意义标题.png" class="YYtitle">
+			<img src="../img/introduction/简介-意义文字.png" class="YYcontent">
+			
+		</div>
+		
+			
+			<img src="../img/introduction/简介-壹red.png" class="di1ye">
+			<img src="../img/introduction/简介-贰yellow.png" class="di2ye">
+			
+		
+		<a href="homepage.html"><img src="../img/introduction/简介-返回首页按钮.png" class="backHome"></a>
+		
+    </div> 
+	
+	<script src="../js/HomeIntro.js"></script>
+	<script type="text/javascript">
+		  // body宽高
+		  let cw = 1920,ch = 1080
+		  let body = document.getElementById('body')
+		  body.style.width = `${cw}px`   //设置或返回块级元素或绝对/固定位置的元素的宽度
+		  body.style.height = `${ch}px`  //设置或返回块级元素或绝对/固定位置的元素的高度
+		
+		  // 对body进行缩放
+		  function windowResize() {
+		    // 窗口宽高
+	
+			let w = window.innerWidth, h = window.innerHeight   //文档显示区的宽度与高度
+		    // 缩放比例
+		    let r = w / cw < h / ch ? w / cw : h / ch
+		
+		    body.style.transform = `scale( ${r})`
+		    // 因为scale是以body的原中心点为基准进行缩放，所以缩放之后需要调整外边距，使其位于窗口的中心位置
+		    body.style.marginLeft = (-(cw - r * cw) / 2 + (w - r * cw) / 2) + 'px'     //设置元素的左外边距
+		    body.style.marginTop = (-(ch - r * ch) / 2 + (h - r * ch) / 2) + 'px'      //设置元素的上外边距
+		    body.style.marginBottom = (-(h>ch?h:ch - r * ch)) + 'px'                   //设置元素的下外边距
+		    body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'                    //设置元素的右外边距
+		  } 
+		
+		  windowResize()
+		  // 监听窗口尺寸变化
+		  window.addEventListener('resize', windowResize);
+		</script>
+			
+	</body>
+</html>
